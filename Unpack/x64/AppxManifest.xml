@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package IgnorableNamespaces="uap mp rescap uap3 desktop build" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3" xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  <Identity Name="ChoungNetworksUS.X410" Publisher="CN=EE5F8EED-A1A5-45B4-BB55-EDC19841084A" Version="2.9.4.0" ProcessorArchitecture="x64" />
+  <Properties>
+    <DisplayName>X410</DisplayName>
+    <PublisherDisplayName>Choung Networks</PublisherDisplayName>
+    <Logo>Assets\app-images\StoreLogo50x50.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.18362.0" MaxVersionTested="10.0.18362.0" />
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.18362.0" MaxVersionTested="10.0.18362.0" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00.UWPDesktop" MinVersion="14.0.24217.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="EN-US" />
+    <Resource Language="JA" />
+    <Resource Language="KO" />
+    <Resource Language="TH" />
+    <Resource uap:Scale="200" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="X410\X410.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="X410" Description="X410" BackgroundColor="#00A4EF" Square150x150Logo="Assets\app-images\Tile150x150.png" Square44x44Logo="Assets\app-images\Tile44x44.png">
+        <uap:DefaultTile Square71x71Logo="Assets\app-images\Tile71x71.png" />
+      </uap:VisualElements>
+      <Extensions>
+        <uap3:Extension Category="windows.appExecutionAlias" Executable="X410\X410.exe" EntryPoint="Windows.FullTrustApplication">
+          <uap3:AppExecutionAlias>
+            <desktop:ExecutionAlias Alias="x410.exe" />
+          </uap3:AppExecutionAlias>
+        </uap3:Extension>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="x410-start" />
+        </uap:Extension>
+        <desktop:Extension Category="windows.startupTask" Executable="X410\X410.exe" EntryPoint="Windows.FullTrustApplication">
+          <desktop:StartupTask TaskId="X410StartupTask" Enabled="false" DisplayName="X410 - X Server for Windows 10" />
+        </desktop:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="privateNetworkClientServer" />
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="Microsoft.Build.DesktopBridge.Tasks.dll" Version="4.6.30319.200" />
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETFramework,Version=v4.5.1" />
+    <build:Item Name="VisualStudio" Version="16.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2019" />
+    <build:Item Name="OperatingSystem" Version="10.0.19041.1 (WinBuild.160101.0800)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.31613.86" />
+    <build:Item Name="ProjectGUID" Value="ff890f10-7a0b-4ee9-9bbc-b3dd975dfd28" />
+    <build:Item Name="MakePri.exe" Version="10.0.18362.1 (WinBuild.160101.0800)" />
+  </build:Metadata>
+  <mp:PhoneIdentity PhoneProductId="57d78afa-bbc2-492c-9f24-741d4fb31c45" PhonePublisherId="9f0f0864-e24a-4424-afcb-e134ea2fb57b" />
+</Package>
