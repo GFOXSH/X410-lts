@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Package IgnorableNamespaces="uap mp rescap uap3 desktop build" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3" xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
-  <Identity Name="ChoungNetworksUS.X410" Publisher="CN=EE5F8EED-A1A5-45B4-BB55-EDC19841084A" Version="2.9.4.0" ProcessorArchitecture="x86" />
+  <Identity Name="ChoungNetworksUS.X410" Publisher="CN=GFOXSH" Version="2.9.4.0" ProcessorArchitecture="x86" />
   <Properties>
     <DisplayName>X410</DisplayName>
     <PublisherDisplayName>Choung Networks</PublisherDisplayName>
